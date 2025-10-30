@@ -1,12 +1,17 @@
 #include<iostream>
+#include<stdio.h>
 using namespace std;
 
 int main(){
-    for(int i=1;i<=5;i++){
-        cout << endl;
-        for(int q=0;q<=5;q++){
-            cout << i << " ";
-        } 
-    }
-    cout << endl;
+    int a,b;
+    char lagi;
+    atas:
+    cout << "Masukkan Bilangan = ";
+    cin >> a;
+    b = a % 2;
+    cout << "Nilai "<< a << "% 2 adalah = " << b;
+    printf("\n\nIngin Hitung Lagi[Y/T] : ");
+    cin >> lagi;
+    if(lagi == 'Y' || lagi == 'y')
+    goto atas;
 }

@@ -1,38 +1,16 @@
-#include<iostream>
+#include <iostream>
+#include <stdio.h>
 using namespace std;
 
 int main(){
-    int a,i,j,k;
-
-    cout << "Masukkan jumlah baris = ";
-    cin >> a;
-
-    for (i = 1; i <= a; i++){
-        for (j = 1; j <= a - i + 1; j++){
-            cout << "* ";
-        }
-        for (k = 1; k < 2 * i - 1; k++){
-            cout << "  ";
-        }
-        for (j = 1; j <= a - i + 1; j++){
-            cout << "* ";
-        }
-        cout << endl;
+    int a=3,b=2,c=1,bil;
+    printf("Bil-A | Bil-B | Bil-C\n");
+    printf("---------------------");
+    for(bil=1;bil<=10;++bil){
+        a+=b;b+=c;c+=2;
+        printf("\n%d\t|%d\t|%d",a,b,c);
+        if(c==13)
+        break;
     }
-
-    for (i = 1; i <= a; i++){
-        for (j = 1; j <= i ; j++){
-            cout << "* ";
-        }
-        for (k = 1; k <= (2 * a) - (2 * i); k++){
-            cout << "  ";
-        }
-        for (j = 1; j <= i; j++){
-            cout << "* ";
-        }
-        cout << endl;
-    }
-
-    getchar();
-    return 0;
+    cout << endl;
 }
